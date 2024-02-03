@@ -11,6 +11,10 @@
     margin-left: 40px;
 }
 
+.authButton {
+    display: flex;
+}
+
 .menuButton, 
 .mobileLinks {
     display: none;
