@@ -15,11 +15,11 @@ export default async function page() {
   const data = await fetchData();
 
   // const data = await getPosts()
-
+console.log(data)
   return (
     <div className={styles.container}>
-      {data.map((post) => (
-        <div className={styles.post} key={post.id}  >
+      {data?.map((post) => (
+        <div className={styles.post} key={post._id}  >
           <PostCard post={post} />
         </div>
       ))}
