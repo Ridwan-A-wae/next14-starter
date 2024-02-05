@@ -12,7 +12,7 @@ export default async function PostCard({post}) {
         <div className={styles.imgContainer}>
           <Image src={post?.img || "https://images.pexels.com/photos/2449785/pexels-photo-2449785.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} alt="" fill className={styles.img} />
         </div>
-        <span className={styles.date}> {post?.createdAt.slice(0,10)} </span>
+        <span className={styles.date}> {post?.createdAt.toString().slice(0,10)} </span>
       </div>
       <div className={styles.bottom}>
         <h1 className={styles.title}>{post?.title} </h1>
